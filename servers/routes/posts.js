@@ -31,6 +31,10 @@ router.get(routerName, async (req, res) => {
     
 });
 
+router.get("/posts/teste", async (req,res) => {
+    return res.status(200).json("Teste");
+})
+
 /* post: cria o json na data ou edita */
 router.post(routerName, async (req, res) => {
     try {
